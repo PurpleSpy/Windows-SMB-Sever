@@ -28,12 +28,14 @@ Partial Class Form1
         RichTextBox1 = New RichTextBox()
         CheckedListBox1 = New CheckedListBox()
         Panel2 = New Panel()
+        Button2 = New Button()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
+        Panel1.Controls.Add(Button2)
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(RichTextBox1)
@@ -88,6 +90,15 @@ Partial Class Form1
         Panel2.Size = New Size(874, 439)
         Panel2.TabIndex = 1
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(171, 377)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(101, 23)
+        Button2.TabIndex = 4
+        Button2.Text = "Add SMB Link"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -96,7 +107,7 @@ Partial Class Form1
         Controls.Add(Panel2)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "Form1"
-        Text = "SMB Link Killer"
+        Text = "SMB Link Manager"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         Panel2.ResumeLayout(False)
@@ -109,5 +120,6 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents Button2 As Button
 
 End Class

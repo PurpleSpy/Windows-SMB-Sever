@@ -1,0 +1,17 @@
+C:\Users\J\source\repos\SMB Link Sever\bin\Release\net10.0-windows\SMB Link Sever.exe
+C:\Users\J\source\repos\SMB Link Sever\bin\Release\net10.0-windows\SMB Link Sever.deps.json
+C:\Users\J\source\repos\SMB Link Sever\bin\Release\net10.0-windows\SMB Link Sever.runtimeconfig.json
+C:\Users\J\source\repos\SMB Link Sever\bin\Release\net10.0-windows\SMB Link Sever.dll
+C:\Users\J\source\repos\SMB Link Sever\bin\Release\net10.0-windows\SMB Link Sever.pdb
+C:\Users\J\source\repos\SMB Link Sever\obj\Release\net10.0-windows\SMB_Link_Sever.Form1.resources
+C:\Users\J\source\repos\SMB Link Sever\obj\Release\net10.0-windows\SMB_Link_Sever.Resources.resources
+C:\Users\J\source\repos\SMB Link Sever\obj\Release\net10.0-windows\SMB Link Sever.vbproj.GenerateResource.cache
+C:\Users\J\source\repos\SMB Link Sever\obj\Release\net10.0-windows\SMB Link Sever.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\J\source\repos\SMB Link Sever\obj\Release\net10.0-windows\SMB Link Sever.AssemblyInfoInputs.cache
+C:\Users\J\source\repos\SMB Link Sever\obj\Release\net10.0-windows\SMB Link Sever.AssemblyInfo.vb
+C:\Users\J\source\repos\SMB Link Sever\obj\Release\net10.0-windows\SMB Link Sever.vbproj.CoreCompileInputs.cache
+C:\Users\J\source\repos\SMB Link Sever\obj\Release\net10.0-windows\SMB Link Sever.dll
+C:\Users\J\source\repos\SMB Link Sever\obj\Release\net10.0-windows\refint\SMB Link Sever.dll
+C:\Users\J\source\repos\SMB Link Sever\obj\Release\net10.0-windows\SMB Link Sever.pdb
+C:\Users\J\source\repos\SMB Link Sever\obj\Release\net10.0-windows\SMB Link Sever.genruntimeconfig.cache
+C:\Users\J\source\repos\SMB Link Sever\obj\Release\net10.0-windows\ref\SMB Link Sever.dll

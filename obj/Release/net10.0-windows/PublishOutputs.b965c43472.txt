@@ -1,0 +1,5 @@
+C:\Users\J\Desktop\New folder\SMB Link Sever.exe
+C:\Users\J\Desktop\New folder\SMB Link Sever.dll
+C:\Users\J\Desktop\New folder\SMB Link Sever.deps.json
+C:\Users\J\Desktop\New folder\SMB Link Sever.runtimeconfig.json
+C:\Users\J\Desktop\New folder\SMB Link Sever.pdb

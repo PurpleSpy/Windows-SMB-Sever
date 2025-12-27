@@ -1,4 +1,5 @@
 ﻿Imports System.Text.RegularExpressions
+Imports System.Xml.Schema
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -132,6 +133,31 @@ Public Class Form1
         End If
 
 
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If LinkAdd.ShowDialog = DialogResult.OK Then
+
+            For Each itm As ListViewItem In LinkAdd.ListView1.Items
+
+                Dim procstart As New ProcessStartInfo("net", "share " & itm.SubItems(1).Text & "=" & itm.Text & " /GRANT:" & itm.SubItems(2).Text & "," & itm.SubItems(3).Text)
+                procstart.CreateNoWindow = True
+                procstart.RedirectStandardOutput = True
+
+                Try
+                    writeText("Attempting to forge link")
+                    Dim xct As Process = Process.Start(procstart)
+
+                    writeText(xct.StandardOutput.ReadToEnd)
+
+                Catch ex As Exception
+
+                End Try
+
+            Next
+        End If
+
+        initCheckbox()
     End Sub
 End Class
 
