@@ -23,12 +23,12 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        Button2 = New Button()
         Button1 = New Button()
         Label1 = New Label()
         RichTextBox1 = New RichTextBox()
         CheckedListBox1 = New CheckedListBox()
         Panel2 = New Panel()
-        Button2 = New Button()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         SuspendLayout()
@@ -40,10 +40,20 @@ Partial Class Form1
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(RichTextBox1)
         Panel1.Controls.Add(CheckedListBox1)
-        Panel1.Location = New Point(4, 9)
+        Panel1.Dock = DockStyle.Fill
+        Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(867, 419)
+        Panel1.Size = New Size(882, 457)
         Panel1.TabIndex = 0
+        ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(171, 377)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(101, 23)
+        Button2.TabIndex = 4
+        Button2.Text = "Add SMB Link"
+        Button2.UseVisualStyleBackColor = True
         ' 
         ' Button1
         ' 
@@ -65,10 +75,10 @@ Partial Class Form1
         ' 
         ' RichTextBox1
         ' 
-        RichTextBox1.Location = New Point(19, 193)
+        RichTextBox1.Location = New Point(21, 187)
         RichTextBox1.Name = "RichTextBox1"
         RichTextBox1.ReadOnly = True
-        RichTextBox1.Size = New Size(845, 165)
+        RichTextBox1.Size = New Size(843, 165)
         RichTextBox1.TabIndex = 1
         RichTextBox1.Text = ""
         ' 
@@ -84,28 +94,21 @@ Partial Class Form1
         ' Panel2
         ' 
         Panel2.Controls.Add(Panel1)
+        Panel2.Dock = DockStyle.Fill
         Panel2.Enabled = False
-        Panel2.Location = New Point(8, 12)
+        Panel2.Location = New Point(0, 0)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(874, 439)
+        Panel2.Size = New Size(882, 457)
         Panel2.TabIndex = 1
-        ' 
-        ' Button2
-        ' 
-        Button2.Location = New Point(171, 377)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(101, 23)
-        Button2.TabIndex = 4
-        Button2.Text = "Add SMB Link"
-        Button2.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(894, 457)
+        ClientSize = New Size(882, 457)
         Controls.Add(Panel2)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "Form1"
         Text = "SMB Link Manager"
         Panel1.ResumeLayout(False)

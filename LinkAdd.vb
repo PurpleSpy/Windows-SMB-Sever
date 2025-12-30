@@ -15,6 +15,7 @@ Public Class LinkAdd
         Using drx As New FolderBrowserDialog
 
             drx.Multiselect = True
+            drx.RootFolder = Environment.SpecialFolder.Desktop
 
             If drx.ShowDialog = DialogResult.OK Then
                 For Each itm As String In drx.SelectedPaths
@@ -37,9 +38,15 @@ Public Class LinkAdd
     End Sub
 
     Private Sub LinkAdd_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        If CVTS.DropDownItems.Count > 1 Then
+            Exit Sub
+        End If
+
         Dim cxt As New ProcessStartInfo("net", "users")
         cxt.CreateNoWindow = True
         cxt.RedirectStandardOutput = True
+
         Dim scp As Process = Process.Start(cxt)
 
         Dim userlist As String = scp.StandardOutput.ReadToEnd
@@ -82,6 +89,19 @@ Public Class LinkAdd
             Cs1.Enabled = True
         Else
             Cs1.Enabled = False
+        End If
+    End Sub
+
+    Private Sub OpenFolderToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenFolderToolStripMenuItem.Click
+        If ListView1.SelectedItems.Count > 0 Then
+
+
+
+            Try
+                Process.Start("explorer", """" & ListView1.SelectedItems(0).Text & """")
+            Catch ex As Exception
+
+            End Try
         End If
     End Sub
 End Class

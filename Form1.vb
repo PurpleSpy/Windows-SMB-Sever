@@ -38,12 +38,12 @@ Public Class Form1
 
         Dim detailofrun As String = pshell.StandardOutput.ReadToEnd
 
-        Dim searchPattern As New Text.RegularExpressions.Regex("^([a-z\$]*) *([a-z]+\:\\[a-z0-9]*|)", RegexOptions.IgnoreCase Or RegexOptions.Multiline)
-
+        Dim searchPattern As New Text.RegularExpressions.Regex("^([a-z\$\-0-9_]*) *([a-z]+\:\\[a-z0-9\-_]*|)", RegexOptions.IgnoreCase Or RegexOptions.Multiline)
+        Dim srx As New Text.RegularExpressions.Regex("----*")
 
 
         For Each itm As Match In searchPattern.Matches(detailofrun)
-            If itm.Groups(1).Value.ToLower = "" Or itm.Groups(1).Value.ToLower = "share" Or itm.Groups(1).Value.ToLower = " " Or itm.Groups(0).Value.ToLower = "" Or itm.Groups(1).Value.ToLower = "the" Then
+            If itm.Groups(1).Value.ToLower = "" Or itm.Groups(1).Value.ToLower = "share" Or itm.Groups(1).Value.ToLower = " " Or itm.Groups(0).Value.ToLower = "" Or itm.Groups(1).Value.ToLower = "the" Or srx.IsMatch(itm.Groups(1).Value.ToLower) Then
                 Continue For
             End If
 

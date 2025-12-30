@@ -36,6 +36,7 @@ Partial Class LinkAdd
         WriteToolStripMenuItem = New ToolStripMenuItem()
         CVTS = New ToolStripMenuItem()
         EveryoneToolStripMenuItem = New ToolStripMenuItem()
+        OpenFolderToolStripMenuItem = New ToolStripMenuItem()
         DeleteToolStripMenuItem = New ToolStripMenuItem()
         Button3 = New Button()
         Cs1.SuspendLayout()
@@ -94,9 +95,9 @@ Partial Class LinkAdd
         ' 
         ' Cs1
         ' 
-        Cs1.Items.AddRange(New ToolStripItem() {ToolStripMenuItem1, CVTS, DeleteToolStripMenuItem})
+        Cs1.Items.AddRange(New ToolStripItem() {ToolStripMenuItem1, CVTS, OpenFolderToolStripMenuItem, DeleteToolStripMenuItem})
         Cs1.Name = "Cs1"
-        Cs1.Size = New Size(160, 70)
+        Cs1.Size = New Size(160, 92)
         ' 
         ' ToolStripMenuItem1
         ' 
@@ -108,14 +109,14 @@ Partial Class LinkAdd
         ' ReadToolStripMenuItem
         ' 
         ReadToolStripMenuItem.Name = "ReadToolStripMenuItem"
-        ReadToolStripMenuItem.Size = New Size(180, 22)
+        ReadToolStripMenuItem.Size = New Size(100, 22)
         ReadToolStripMenuItem.Text = "Read"
         ' 
         ' WriteToolStripMenuItem
         ' 
         WriteToolStripMenuItem.Name = "WriteToolStripMenuItem"
-        WriteToolStripMenuItem.Size = New Size(180, 22)
-        WriteToolStripMenuItem.Text = "Change"
+        WriteToolStripMenuItem.Size = New Size(100, 22)
+        WriteToolStripMenuItem.Text = "Full"
         ' 
         ' CVTS
         ' 
@@ -129,6 +130,12 @@ Partial Class LinkAdd
         EveryoneToolStripMenuItem.Name = "EveryoneToolStripMenuItem"
         EveryoneToolStripMenuItem.Size = New Size(122, 22)
         EveryoneToolStripMenuItem.Text = "Everyone"
+        ' 
+        ' OpenFolderToolStripMenuItem
+        ' 
+        OpenFolderToolStripMenuItem.Name = "OpenFolderToolStripMenuItem"
+        OpenFolderToolStripMenuItem.Size = New Size(159, 22)
+        OpenFolderToolStripMenuItem.Text = "Open Folder"
         ' 
         ' DeleteToolStripMenuItem
         ' 
@@ -154,6 +161,7 @@ Partial Class LinkAdd
         Controls.Add(ListView1)
         Controls.Add(Button2)
         Controls.Add(Button1)
+        MaximizeBox = False
         Name = "LinkAdd"
         Text = "Add a Share Folder"
         Cs1.ResumeLayout(False)
@@ -175,4 +183,5 @@ Partial Class LinkAdd
     Friend WithEvents CVTS As ToolStripMenuItem
     Friend WithEvents EveryoneToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DeleteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OpenFolderToolStripMenuItem As ToolStripMenuItem
 End Class
