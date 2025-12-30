@@ -1,1 +1,1 @@
-This program is a gui for the CMD NET SHARE command. It must be run as an administrator to function properly. The program will sever all user made fileshares and leave your fileshare dashboard running. 
+This program is a gui for the CMD NET SHARE command. It must be run as an administrator to function properly. The program will sever all user made fileshares and leave your fileshare dashboard running. You can also make fileshares with this program.
